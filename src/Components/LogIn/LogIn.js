@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebaseConfiq";
@@ -7,15 +7,13 @@ import { useHistory, useLocation } from "react-router";
 // import logInImg from "../../images/logIn.png";
 import { useForm } from "react-hook-form";
 import "./LogIn.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
 const LogIn = () => {
-
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   let history = useHistory();
   let location = useLocation();
@@ -30,7 +28,6 @@ const LogIn = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    
     //create new account of email and password
     if (newUser) {
       firebase
@@ -51,9 +48,9 @@ const LogIn = () => {
           setLoggedInUser(newUserInfo);
         });
     }
-    
+
     //sing in with email and password
-    if(!newUser) {
+    if (!newUser) {
       firebase
         .auth()
         .signInWithEmailAndPassword(data.email, data.password)

@@ -12,7 +12,6 @@ const AddBusiness = () => {
     <div>
       <h3>Add your Business to our page and become berrybox partners</h3>
       <div className="container">
-        {" "}
         <form onSubmit={handleSubmit(onSubmit)}>
           <strong className="mt-3">Business Name : </strong>
           <br />
@@ -89,27 +88,32 @@ const AddBusiness = () => {
             className="rounded border-success w-100 "
             placeholder="Enter your email"
             ref={register("email")}
-          /> <br /> <br />
-           <input
+          />{" "}
+          <br /> <br />
+          <input
             name="payment"
             id="payment"
             className="rounded border-success w-100 "
             placeholder="Enter your payment"
             ref={register("payment")}
-          /> <br /> <br />
-           <input
+          />{" "}
+          <br /> <br />
+          <input
             name="timing"
             id="timing"
             className="rounded border-success w-100 "
             placeholder="Enter your timing"
             ref={register("timing")}
           />
-            <br /> <br />
+          <br /> <br />
           <button className="btn btn-success mr-5" type="submit">
             Register
           </button>
         </form>
-        <strong>By Registering your Business to the Site you agree with BeryBox Partner Terms and Conditions</strong>
+        <strong>
+          By Registering your Business to the Site you agree with BeryBox
+          Partner Terms and Conditions
+        </strong>
       </div>
     </div>
   );
