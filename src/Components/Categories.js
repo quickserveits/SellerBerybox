@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 function Categories() {
 
 
@@ -97,7 +98,8 @@ function Categories() {
             </div>
             
             </div>
-            <b class="text-success text-end" style={{cursor:"pointer"}}>+Add Product</b>
+            <div className="col-md-8"><Link to='addBusiness'><button class="text-success text-end" style={{cursor:"pointer", border: "none"}}>+Add Product</button>  </Link></div>
+
             <div class="col-lg-8 col-md-8">
             </div>
             </div>
