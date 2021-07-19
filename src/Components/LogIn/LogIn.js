@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebaseConfiq";
@@ -177,7 +177,7 @@ const LogIn = () => {
                 onClick={handleGoogleLogin}
                 className="btn btn-outline-primary w-100"
               >
-                Continue With Google
+                Continue With Google auth
               </button>
             </div>
           </div>
