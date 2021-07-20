@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Categories from "./Components/Categories";
 import { createContext, useState } from "react";
-import LogIn from "./Components/LogIn/LogIn";
+// import LogIn from "./Components/LogIn/LogIn";
 import AddBusiness from "./Components/AddBusiness/AddBusiness";
 import LoginSignUp from "./Components/LogIn/LoginSignUp";
+import InvantoryManage from "./Components/InvantoryManage/InvantoryManage";
 // import CheckOut from "./Components/CheckOut";
 
 export const UserContext = createContext();
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path="/login">
               <LoginSignUp />
+            </Route>
+            <Route path="/inventory">
+              <InvantoryManage/>
             </Route>
             <Route exact path="/">
               <Home></Home>
