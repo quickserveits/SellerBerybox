@@ -5,6 +5,7 @@ import Categories from "./Components/Categories";
 import { createContext, useState } from "react";
 import LogIn from "./Components/LogIn/LogIn";
 import AddBusiness from "./Components/AddBusiness/AddBusiness";
+import LoginSignUp from "./Components/LogIn/LoginSignUp";
 // import CheckOut from "./Components/CheckOut";
 
 export const UserContext = createContext();
@@ -23,10 +24,10 @@ function App() {
               <Categories />
             </Route>
             <Route path="/addBusiness">
-            <AddBusiness />
+              <AddBusiness />
             </Route>
             <Route path="/login">
-              <LogIn/>
+              <LoginSignUp />
             </Route>
             <Route exact path="/">
               <Home></Home>
