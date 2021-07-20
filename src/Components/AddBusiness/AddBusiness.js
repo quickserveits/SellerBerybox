@@ -14,7 +14,14 @@ const AddBusiness = () => {
   return (
     <div>
       <h3>Add your Business to our page and become berrybox partners</h3>
-      <div className="container ">
+      <div
+        className="container "
+        style={{
+          background: " url(./barrybox.jpg)",
+          backgroundRepeat: " no-repeat",
+          backgroundSize: "auto",
+        }}
+      >
         <div className="row">
           <div
             className="col-md-5 frame p-4 ml-0 text-white"
@@ -114,12 +121,12 @@ const AddBusiness = () => {
               </strong>
             </div>
           </div>
-          <div className="com-md-8">
+          {/* <div className="com-md-8">
             <img
               src="https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZSUyMGNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
