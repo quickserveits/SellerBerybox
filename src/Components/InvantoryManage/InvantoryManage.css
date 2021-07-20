@@ -12,3 +12,12 @@
     width : 700px;
     margin : auto;
 }
+
+.product-description{
+    width: 100%;
+    border: 1px solid #0c3869;
+    border-radius: 500px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666666; 
+}

@@ -31,15 +31,27 @@ const InvantoryManage = () => {
             )}
             <br />
             <input
-              name="description"
-              id="description"
+              name="availability"
+              id="availability"
               className="form-input"
-              placeholder="Enter Product Description"
+              placeholder="Enter Product availability"
               ref={register({ required: true })}
             />
             <br />
-            {errors.description && (
-              <span className="text-danger">Add Product Description</span>
+            {errors.availability && (
+              <span className="text-danger">Add Product Availability</span>
+            )}
+            <br />
+            <input
+              name="material"
+              id="material"
+              className="form-input"
+              placeholder="material"
+              ref={register({ required: true })}
+            />
+            <br />
+            {errors.material && (
+              <span className="text-danger">Add material</span>
             )}
             <br />
             <input
@@ -67,6 +79,28 @@ const InvantoryManage = () => {
               <span className="text-danger">Add product price</span>
             )}
             <br />
+            <input
+              name="time"
+              type="text"
+              id="time"
+              className="form-input"
+              placeholder="Enter delivery time"
+              ref={register({ required: true })}
+            />
+            <br />
+            {errors.time && (
+            <span className="text-danger">Add Delivery time</span>
+            )}
+            <br />
+          <textarea
+            className="product-description"
+            placeholder="Description"
+            {...register("description", { required: true })}
+          ></textarea> <br />
+                      {errors.description && (
+              <span className="text-danger">Add product Description</span>
+            )}
+          <br />
             <select className="form-input" {...register("Select a offer")}>
               <option value="female">10% offer</option>
               <option value="20">20% offer</option>
@@ -78,9 +112,9 @@ const InvantoryManage = () => {
               className="w-100"
               ref={register}
               type="file"
-              name="picture"
+              name="file"
             />{" "}
-            <br />
+            <br /> <br />
             <button className="btn btn-primary mr-5" type="submit">
               Add Item
             </button>
