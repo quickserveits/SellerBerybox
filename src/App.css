@@ -592,3 +592,6 @@ a.btn-goback:hover {
   right: 2%;
   top: 10%;
   }
+  .input-text{
+    text-align: left;
+  }

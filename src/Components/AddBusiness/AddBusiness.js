@@ -17,12 +17,12 @@ const AddBusiness = () => {
         <div className="row">
           <div className="col-md-6">
           <form onSubmit={handleSubmit(onSubmit)}>
-          <strong className="mt-3">Business Name : </strong>
+          <strong className="input-text mt-3">Business Name : </strong>
           <br />
           <input
             name="name"
             id="name"
-            className="rounded border-success w-100 "
+            className="form-input "
             placeholder="Enter your Business name"
             ref={register({ required: true })}
           />{" "}
@@ -31,12 +31,12 @@ const AddBusiness = () => {
             <span className="text-danger">Name field is required</span>
           )}
           <br />
-          <strong className="mt-3">Owner : </strong>
+          <strong className="input-text mt-3">Owner : </strong>
           <br />
           <input
             name="owner"
             id="owner"
-            className="rounded border-success w-100"
+            className="form-input"
             placeholder="Enter owner name"
             ref={register({ required: true })}
           />
@@ -45,12 +45,12 @@ const AddBusiness = () => {
             <span className="text-danger">Owner field is required</span>
           )}
           <br />
-          <strong className="mt-3"> Address : </strong>
+          <strong className="input-text mt-3"> Address : </strong>
           <br />
           <input
             name="address"
             id="address"
-            className="rounded border-success w-100"
+            className="form-input"
             placeholder="Enter Your Address"
             ref={register({ required: true })}
           />
@@ -59,13 +59,13 @@ const AddBusiness = () => {
             <span className="text-danger">Address field is required</span>
           )}
           <br />
-          <strong className="mt-3"> Phone Number:</strong>
+          <strong className="input-text mt-3"> Phone Number:</strong>
           <br />
           <input
             name="mobile"
             type="number"
             id="mobile"
-            className="rounded border-success w-100"
+            className="form-input"
             placeholder="Enter Your Phone Number"
             ref={register({ required: true })}
           />
@@ -74,10 +74,10 @@ const AddBusiness = () => {
             <span className="text-danger">Add a phone number</span>
           )}
           <br />
-          <strong className="mt-3"> Select a Category:</strong>
+          <strong className="input-text mt-3"> Select a Category:</strong>
           <br />
           <select
-            className="rounded border-success w-100"
+            className="form-input"
             {...register("Select a Category")}
           >
             <option value="female">Jewelry</option>
@@ -93,7 +93,7 @@ const AddBusiness = () => {
           <input
             name="email"
             id="email"
-            className="rounded border-success w-100 "
+            className="form-input "
             placeholder="Enter your email"
             ref={register("email")}
           />{" "}
@@ -101,7 +101,7 @@ const AddBusiness = () => {
           <input
             name="payment"
             id="payment"
-            className="rounded border-success w-100 "
+            className="form-input "
             placeholder="Enter your payment"
             ref={register("payment")}
           />{" "}
@@ -109,7 +109,7 @@ const AddBusiness = () => {
           <input
             name="timing"
             id="timing"
-            className="rounded border-success w-100 "
+            className="form-input "
             placeholder="Enter your timing"
             ref={register("timing")}
           />
