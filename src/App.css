@@ -62,7 +62,7 @@ body * {
   margin-right: auto;
   /* border-top: solid 1px rgba(255, 255, 255, 0.5); */
   border-radius: 5px;
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 7px rgba(235, 178, 193, 255);
   overflow: hidden;
   transition: all 0.5s ease;
   background-color: rgb(209, 216, 219);
@@ -549,49 +549,52 @@ a.btn-goback:hover {
   transform: rotate(180deg);
 }
 
-.icon-container{
+.icon-container {
   display: flex;
   justify-content: space-evenly;
   width: 200px;
   margin: auto;
 }
-.icon{
+.icon {
   width: 40px;
 }
-.icon img{
+.icon img {
   border-radius: 20px;
   cursor: pointer;
 }
 
-.social-container{
+.social-container {
   font-family: sans-serif;
   text-align: center;
   font-size: 40px;
-  position:relative;
+  position: relative;
 }
-.social-container p:before{
+.social-container p:before {
   content: "";
-  display:block;
+  display: block;
   width: 145px;
-  height:2px;
+  height: 2px;
   background: #444;
   position: absolute;
   left: 2%;
   top: 10%;
   /* z-index: -2; */
-
 }
 
-.social-container p::after{
-   content: "";
-  display:block;
+.social-container p::after {
+  content: "";
+  display: block;
   width: 145px;
-  height:2px;
+  height: 2px;
   background: #444;
   position: absolute;
   right: 2%;
   top: 10%;
+<<<<<<< HEAD
   }
   .input-text{
     text-align: left;
   }
+=======
+}
+>>>>>>> 9d5a2742b68fce7c201fca1f7a3746bc02f76ffb
