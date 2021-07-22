@@ -8,7 +8,13 @@ class LoginSignUp extends Component {
 
   render() {
     return (
-      <div className="div-body">
+      <div
+     
+        className="div-body"
+        // style={{
+        //   background: "#ebb2c1",
+        // }}
+      >
         <div className="container">
           <div className="frame">
             <div className="nav">

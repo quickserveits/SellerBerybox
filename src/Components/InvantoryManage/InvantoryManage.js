@@ -3,15 +3,48 @@ import { useForm } from "react-hook-form";
 import "./InvantoryManage.css";
 
 const InvantoryManage = () => {
+  const [file, setFile] = React.useState(null)
+  const handleChangeFIle = (event) => {
+    const newFile = event.target.files[0]
+    setFile(newFile)
+}
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    alert("Register Completed");
     console.log(data);
+    const formData = {
+      file: file,
+      type:data.type,
+      description: data.description,
+      offer: data.offer,
+      price: data.price,
+      review: data.review,
+      material: data.material,
+      time: data.time,
+      availability: data.availability,
+    }
+
+  
+    fetch('https://dentist-care.herokuapp.com/addDoctors', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if(data){
+        alert('product has been added')
+      }
+    })
+    .catch(error => {
+      console.error(error)
+    })
+
   };
+  
+
   return (
     <div>
       <h3 className="p-4">Listing</h3>
@@ -102,7 +135,7 @@ const InvantoryManage = () => {
             )}
           <br />
             <select className="form-input" {...register("Select a offer")}>
-              <option value="female">10% offer</option>
+              <option value="10">10% offer</option>
               <option value="20">20% offer</option>
               <option value="30">30% offer</option>
               <option value="50">50% offer</option>
@@ -113,6 +146,7 @@ const InvantoryManage = () => {
               ref={register}
               type="file"
               name="file"
+              onChange={handleChangeFIle}
             />{" "}
             <br /> <br />
             <button className="btn btn-primary mr-5" type="submit">
