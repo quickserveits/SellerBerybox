@@ -23,14 +23,14 @@ class LoginSignUp extends Component {
             </div>
             <div ng-app ng-init="checked = false">
               <form className="form-signin" action method="post" name="form">
-                <label htmlFor="dlno">email</label>
+                {/* <label htmlFor="dlno">email</label> */}
                 <input
                   className="form-styling"
                   type="text"
                   name="name"
                   placeholder="Enter your email address"
                 />
-                <label htmlFor="password">Password</label>
+                {/* <label htmlFor="password">Password</label> */}
                 <input
                   className="form-styling"
                   type="text"

@@ -69,7 +69,7 @@ body * {
 }
 
 .frame-long {
-  height: 550px;
+  height: 600px;
 }
 
 .frame-short {
@@ -590,11 +590,4 @@ a.btn-goback:hover {
   position: absolute;
   right: 2%;
   top: 10%;
-<<<<<<< HEAD
-  }
-  .input-text{
-    text-align: left;
-  }
-=======
 }
->>>>>>> 9d5a2742b68fce7c201fca1f7a3746bc02f76ffb
